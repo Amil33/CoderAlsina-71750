@@ -1,0 +1,25 @@
+$H-color: #ff0;
+$text-color: #fc0d;
+$bg-color-primary: #715;
+$bg-color-secundary: #313d;
+$bg-color-terciary: #352010;
+$font-primary: sans-serif;
+$vp-lg: 1080px;
+$vp-md: 769px;
+$vp-sm: 426px;
+
+@mixin flex($df: flex, $fd: column, $jc: center, $ai: center, $ta: center, $fw: wrap) {
+    display: $df;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    text-align: $ta;
+    flex-wrap: $fw;
+}
+
+$breakpoint-xs: 480px;
+$breakpoint-s: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-l: 1200px;
+$breakpoint-xl: 1900px;
+

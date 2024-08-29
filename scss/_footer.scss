@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./base";
+footer {
+    @include flex();
+    background-color: $bg-color-primary;
+    .footer__Redes {
+        list-style: none;
+        .footer_item {
+            display: inline;
+            .icon {
+                width: 45px;
+            }
+        }
+    }
+}
+
+

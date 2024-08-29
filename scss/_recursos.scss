@@ -1,0 +1,19 @@
+.Recursos__container {
+    height: 800px;
+    text-align: center;
+    .recursos_item {
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        &:hover {
+            opacity: 0.74;
+            outline: 2px solid $H-color;
+            box-shadow: 0 0 5px 5px $H-color;
+        }
+    }
+
+}
+

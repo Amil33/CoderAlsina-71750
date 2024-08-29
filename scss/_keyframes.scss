@@ -1,0 +1,51 @@
+@import "./variables";
+@keyframes llenar-barra60 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes llenar-barra70 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes llenar-barra80 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+@keyframes llenar-barra90 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+@keyframes llenar-barra100 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes navbar-movement {
+    from {
+        background-color: $bg-color-primary;
+    }
+    to {
+        background-color: #ddd6;
+        color: $bg-color-terciary;
+    }
+}

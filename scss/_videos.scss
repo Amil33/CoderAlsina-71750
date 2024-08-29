@@ -1,0 +1,19 @@
+@import "./variables";
+.video__container {
+    @include flex();
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    .video__content {
+        border: solid 1px $H-color;
+        margin: 15px 0 15px 0;
+        p {
+            padding: 5px;
+        }
+        .video__video {
+            width: 90%;
+            padding: 5px;
+            border-radius: 15px;
+        }
+    }
+}

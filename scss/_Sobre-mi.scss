@@ -1,0 +1,106 @@
+@import "./variables";
+.Sobre-mi__container {
+    @include flex($fd: row);
+    max-width: 1040px;
+    margin-bottom: 15px;
+    .Sobre-mi__portada-container {
+        max-height: 100%;
+        margin-top: 50px;
+        .Sobre-mi__portada {
+            object-fit: cover;
+            border-radius: 5px;
+            width: 1300px;
+            max-width: 80%;
+            box-shadow: 0 0 5px 1px $H-color;
+        }
+    }
+    .Sobre-mi__data-container {
+        margin: 20px;
+        padding: 5px;
+        width: 900px;
+        max-width: 80%;
+        max-height: 100%;
+        border: 1px solid $H-color;
+        border-radius: 5px;
+        @media  screen and (min-width: $breakpoint-md) {
+            @include flex ($fd: row);
+            max-width: 60%;
+        }
+    }
+}
+.mejores__pandilleros__container {
+    margin: 5px;
+    .mejores__pandilleros__titulo {
+        text-align: center;
+        margin: 10px 0 50px 0;
+    }
+    .grid__container {
+        color: $H-color;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1500px;
+        margin: auto;
+        width: 90%;
+        gap: 12px;
+        min-height: 90dvh;
+        padding: 10px;
+        .grid_item {
+            display: grid;
+            background-position: center;
+            background-size: cover;
+            place-content: center;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 5px #0005;
+            &:hover {
+                opacity: 0.74;
+                outline: 2px solid $H-color;
+                box-shadow: 0 0 5px 5px $H-color;
+            }
+            @media screen and (min-width: $breakpoint-md) {
+                &:first-child {
+                    grid-column: span 2;
+                }
+                &:nth-child(6) {
+                    grid-column: span 2;
+                }
+            }
+            @media screen and (min-width: $breakpoint-l) {
+                &:first-child {
+                    grid-column: span 2;
+                    grid-row: span 2;
+                }
+                &:nth-child(6) {
+                    grid-column: span 4;
+                }
+            }
+        }
+        .grid_item-g-pataderecha {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/Pandilla-gatuna3.webp);
+        }
+        .grid_item-g-wiska {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/GuadianWiska.jpg);
+            background-position: top;
+        }
+        .grid_item-g-pescado {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/GuardianPEscado.jpg);
+        }
+        .grid_item-g-awa {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/Wardianawa.jpg);
+        }
+        .grid_item-g-rascador {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/GuardianRascador.jpg);
+            background-position-y: 350px;
+        }
+        .grid_item-g-techo {
+            background-image: linear-gradient(#000f, #0005, #000f), url(../images/GuardianTEcho.jpg);
+        }
+    }
+}
+
+
+
+
+
+
+
+

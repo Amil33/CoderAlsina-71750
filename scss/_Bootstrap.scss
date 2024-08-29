@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./keyframes";
+.navbar {
+    padding: 20px;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link {
+    color: $H-color;
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+    .navbar-brand {
+        display: none;
+    }
+}

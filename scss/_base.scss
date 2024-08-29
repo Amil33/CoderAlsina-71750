@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./keyframes";
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+}
+body {
+    background-color: $bg-color-secundary;
+    color: $text-color;
+}
+.header {
+    background-color: $bg-color-primary;
+    font-size: 20px;
+    animation-name: navbar-movement;
+    animation-timeline: scroll();
+    animation-range: 10px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.header__logo {
+    max-width: 100%;
+    width: 64px;
+    margin: 10px 20px;
+}
+H1, H2 {
+    color: $H-color;
+}

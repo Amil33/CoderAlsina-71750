@@ -1,0 +1,94 @@
+@import "./variables";
+.blog__container {
+    @include flex();
+    margin: 20px 10px 20px 10px;
+    .blog__destacado-container {
+        margin: 0 0 30px 0;
+        .blog__categoria-h2 {
+            color: $H-color;
+        }
+        .blog__destacado {
+            object-fit: cover;
+            border: 5px solid $H-color;
+            border-radius: 5px;
+            padding: 5px;
+            width: 900px;
+            max-width: 80%;
+        }
+        h2 {
+            padding: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+        .blog__boton-ver-mas {
+            background-color: #ddd;
+            margin: 10px;
+        }
+    }
+    .blog__categorias-wraper {
+        @include flex();
+        max-width: 1300px;
+        margin-bottom: 15px;
+        .blog__categorias-titulo {
+            border: 3px solid $H-color;
+            border-radius: 25px;
+            margin: 0 0 35px 0;
+            padding: 15px;
+        }
+        .blog__categorias-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            padding: 5px;
+            .blog__c-grid-items {
+                display: grid;
+                place-content: center;
+                border-radius: 5px;
+                max-width: 600px;
+                max-height: 100%;
+                h4 {
+                    margin: 5px;
+                    color: $H-color;
+                }
+                p {
+                    margin: 5px;
+                }
+                .blog__c-grid-items-img{
+                    margin: auto;
+                    border-radius: 5px;
+                    max-width: 400px;
+                    width: 60%;
+                }
+                &:hover {
+                    opacity: 0.74;
+                    outline: 2px solid $H-color;
+                    box-shadow: 0 0 5px 5px $H-color;
+                }
+                @media screen and (min-width: $breakpoint-md) {
+                    padding: 5px;
+                    border: solid 1px $H-color;
+                    &:first-child {
+                        grid-column: span 2;
+                        max-width: 100%;
+                    }
+                    &:nth-child(6) {
+                        grid-column: span 2;
+                        max-width: 100%;
+                    }
+                }
+                @media screen and (min-width: $breakpoint-l) {
+                    &:first-child {
+                        grid-column: span 2;
+                        grid-row: span 2;
+                        width: 600px;
+                    }
+                    &:nth-child(6) {
+                        grid-column: span 4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
