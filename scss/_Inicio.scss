@@ -6,8 +6,9 @@
     margin: auto;
     .profile__video-wrapper {
         @include flex();
-        max-width: 1040px;
-        margin: 5px;
+        width: 1500px;
+        max-width: 90%;
+        margin: auto;
         .profile__video-container {
             margin: 5px;
             .profile__video {
@@ -16,6 +17,8 @@
             }
         }
         .profile__data-video-container {
+            width: 900px;
+            max-width: 70%;
             padding: 5px;
         }
         @media screen and (min-width: $breakpoint-md) {
@@ -30,8 +33,9 @@
     }
     .profile__wrapper {
         @include flex();
-        max-width: 1040px;
-        margin-bottom: 15px;
+        width: 1500px;
+        max-width: 90%;
+        margin: auto;
         .profile__img-container {
             max-height: 100%;
             overflow: hidden;
@@ -99,7 +103,7 @@
             @include flex($fd: row);
             .profile__img-container {
                 max-width: 400px;
-                height: 100%;
+                max-height: 780px;
                 border-radius: 25px 0 0 25px;
                 .profile__img {
                     object-fit: cover;

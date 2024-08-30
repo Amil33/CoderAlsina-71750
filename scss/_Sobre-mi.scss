@@ -1,8 +1,9 @@
 @import "./variables";
 .Sobre-mi__container {
-    @include flex($fd: row);
-    max-width: 1040px;
-    margin-bottom: 15px;
+    @include flex($fd: column);
+    width: 3000px;
+    max-width: 90%;
+    margin: auto;
     .Sobre-mi__portada-container {
         max-height: 100%;
         margin-top: 50px;
@@ -24,7 +25,7 @@
         border-radius: 5px;
         @media  screen and (min-width: $breakpoint-md) {
             @include flex ($fd: row);
-            max-width: 60%;
+            max-width: 80%;
         }
     }
 }
