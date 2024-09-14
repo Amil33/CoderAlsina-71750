@@ -109,6 +109,10 @@
   color: #ff0;
 }
 
+.logo {
+  width: 75px;
+}
+
 @media screen and (max-width: 480px) {
   .navbar-brand {
     display: none;
@@ -193,7 +197,7 @@ body {
   margin: 10px 20px;
 }
 
-H1, H2 {
+h1, h2 {
   color: #ff0;
 }
 
@@ -264,6 +268,7 @@ H1, H2 {
 }
 .profile .profile__video-wrapper .profile__video-container {
   margin: 5px;
+  width: 1500px;
 }
 .profile .profile__video-wrapper .profile__video-container .profile__video {
   border-radius: 25px;
@@ -277,7 +282,7 @@ H1, H2 {
 @media screen and (min-width: 1024px) {
   .profile .profile__video-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -394,82 +399,7 @@ H1, H2 {
     box-shadow: 0 0 9px rgba(255, 170, 0, 0.2);
   }
 }
-.profile .--container {
-  max-width: 400px;
-}
-
-/*
-@mixin x-small {
-    @media screen and (min-width: $breakpoint-xs) {
-      @content;
-    }
-  }
-
-  @mixin small {
-    @media screen and (min-width: $breakpoint-s) {
-      @content;
-    }
-  }
-
-  @mixin medium {
-    @media screen and (min-width: $breakpoint-md) {
-      @content;
-    }
-  }
-
-  @mixin large {
-    @media screen and (min-width: $breakpoint-l) {
-      @content;
-    }
-  }
-
-  @mixin x-large {
-    @media screen and (min-width: $breakpoint-xl) {
-      @content;
-    }
-  }
-*/
-/*
-
-
-@container profile (min-width: 800px){
-
-        .profile__video-wrapper{
-            margin: auto;
-        }
-
-        .profile__wrapper {
-            flex-direction: row;
-            padding: 20px;
-            height: 80vh;
-            margin: auto;
-            margin-top: 30px;
-        }
-
-        .profile__img-container {
-            max-height: initial;
-            border-radius: 25px 0 0 25px;
-            margin: 0;
-        }
-
-        .profile__data-container {
-            background-color: #352010;
-            align-items: center;
-            border-radius: 0 25px 25px 0;
-            box-shadow: 0 0 9px #fa03;
-
-        }
-
-        .profile__img {
-            height: 100%;
-            object-fit: cover;
-            margin-top: 20px;
-            border-radius: 25px 0 0 25px;
-        }
-
-
-} */
-.Sobre-mi__container {
+.sobre-mi__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,35 +410,54 @@ H1, H2 {
   max-width: 90%;
   margin: auto;
 }
-.Sobre-mi__container .Sobre-mi__portada-container {
+.sobre-mi__container .sobre-mi__portada-container {
   max-height: 100%;
   margin-top: 50px;
 }
-.Sobre-mi__container .Sobre-mi__portada-container .Sobre-mi__portada {
+.sobre-mi__container .sobre-mi__portada-container .sobre-mi__portada {
   object-fit: cover;
   border-radius: 5px;
   width: 1300px;
   max-width: 80%;
   box-shadow: 0 0 5px 1px #ff0;
 }
-.Sobre-mi__container .Sobre-mi__data-container {
+.sobre-mi__container .sobre-mi__data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 2000px;
+  max-width: 100%;
+}
+.sobre-mi__container .sobre-mi__data-container .sobre-mi__data-historia, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-habilidades, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-mision, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-testimonios {
   margin: 20px;
   padding: 5px;
-  width: 900px;
+  width: 420px;
   max-width: 80%;
   max-height: 100%;
   border: 1px solid #ff0;
   border-radius: 5px;
 }
-@media screen and (min-width: 1024px) {
-  .Sobre-mi__container .Sobre-mi__data-container {
+@media screen and (min-width: 768px) {
+  .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-historia, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-habilidades, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-mision, .sobre-mi__container .sobre-mi__data-container .sobre-mi__data-testimonios {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     flex-wrap: wrap;
-    max-width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sobre-mi__container .sobre-mi__data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -588,10 +537,14 @@ H1, H2 {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  margin: 20px 10px 20px 10px;
+  margin: auto;
+  width: 2000px;
+  max-width: 90%;
 }
 .blog__container .blog__destacado-container {
   margin: 0 0 30px 0;
+  width: 2000px;
+  max-width: 80%;
 }
 .blog__container .blog__destacado-container .blog__categoria-h2 {
   color: #ff0;
@@ -607,6 +560,11 @@ H1, H2 {
 .blog__container .blog__destacado-container h2 {
   padding: 10px;
   text-shadow: 1px 1px 5px #000;
+}
+.blog__container .blog__destacado-container .blog__p-destacado {
+  margin: auto;
+  width: 900px;
+  max-width: 80%;
 }
 .blog__container .blog__destacado-container .blog__boton-ver-mas {
   background-color: #ddd;
@@ -695,24 +653,40 @@ H1, H2 {
   padding: 10px;
   margin: auto;
 }
-.video__container .video__content {
+.video__container .video__content-h {
   border: solid 1px #ff0;
   margin: 15px 0 15px 0;
 }
-.video__container .video__content p {
+.video__container .video__content-h h3 {
   padding: 5px;
 }
-.video__container .video__content .video__video {
-  width: 90%;
+.video__container .video__content-h .video__content p {
+  padding: 5px;
+}
+.video__container .video__content-h .video__content .video__video {
+  width: 300px;
   padding: 5px;
   border-radius: 15px;
 }
+@media screen and (min-width: 768px) {
+  .video__container .video__content-h .video__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .video__container .video__content-h .video__content p {
+    max-width: 50%;
+  }
+}
 
-.Recursos__container {
+.recursos__container {
   height: 800px;
   text-align: center;
 }
-.Recursos__container .recursos_item {
+.recursos__container .recursos_item {
   text-decoration: none;
   color: var(--text-color);
   display: flex;
@@ -720,7 +694,7 @@ H1, H2 {
   align-items: center;
   margin: 20px;
 }
-.Recursos__container .recursos_item:hover {
+.recursos__container .recursos_item:hover {
   opacity: 0.74;
   outline: 2px solid #ff0;
   box-shadow: 0 0 5px 5px #ff0;
@@ -805,7 +779,7 @@ body {
   margin: 10px 20px;
 }
 
-H1, H2 {
+h1, h2 {
   color: #ff0;
 }
 

@@ -4,16 +4,27 @@
     width: 95%;
     padding: 10px;
     margin: auto;
-    .video__content {
+    .video__content-h {
         border: solid 1px $H-color;
         margin: 15px 0 15px 0;
-        p {
+        h3 {
             padding: 5px;
         }
-        .video__video {
-            width: 90%;
-            padding: 5px;
-            border-radius: 15px;
+        .video__content{
+            p {
+                padding: 5px;
+            }
+            .video__video {
+                width: 300px;
+                padding: 5px;
+                border-radius: 15px;
+            }
+            @media screen and (min-width: $breakpoint-s) {
+                @include flex($fd: row);
+                p {
+                    max-width: 50%;
+                }
+            }
         }
     }
 }

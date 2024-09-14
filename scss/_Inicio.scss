@@ -11,6 +11,7 @@
         margin: auto;
         .profile__video-container {
             margin: 5px;
+            width: 1500px;
             .profile__video {
                 border-radius: 25px;
                 width: 100%;
@@ -22,7 +23,7 @@
             padding: 5px;
         }
         @media screen and (min-width: $breakpoint-md) {
-            @include flex($fd: row);
+            @include flex();
             .profile__video-container {
                 max-width: 1000px;
                 .profile__video {
@@ -120,95 +121,6 @@
         }
     }
         .--container {
-            max-width: 400px;
+            
         }
     }
-
-
-/*
-@mixin x-small {
-    @media screen and (min-width: $breakpoint-xs) {
-      @content;
-    }
-  }
-  
-  @mixin small {
-    @media screen and (min-width: $breakpoint-s) {
-      @content;
-    }
-  }
-  
-  @mixin medium {
-    @media screen and (min-width: $breakpoint-md) {
-      @content;
-    }
-  }
-  
-  @mixin large {
-    @media screen and (min-width: $breakpoint-l) {
-      @content;
-    }
-  }
-  
-  @mixin x-large {
-    @media screen and (min-width: $breakpoint-xl) {
-      @content;
-    }
-  }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-@container profile (min-width: 800px){
-
-        .profile__video-wrapper{
-            margin: auto;
-        }
-
-        .profile__wrapper {
-            flex-direction: row;
-            padding: 20px;
-            height: 80vh;
-            margin: auto;
-            margin-top: 30px;
-        }
-    
-        .profile__img-container {
-            max-height: initial;
-            border-radius: 25px 0 0 25px;
-            margin: 0;
-        }
-    
-        .profile__data-container {
-            background-color: #352010;
-            align-items: center;
-            border-radius: 0 25px 25px 0;
-            box-shadow: 0 0 9px #fa03;
-    
-        }
-    
-        .profile__img {
-            height: 100%;
-            object-fit: cover;
-            margin-top: 20px;
-            border-radius: 25px 0 0 25px;
-        }
-
-
-} */

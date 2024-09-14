@@ -11,6 +11,10 @@
     color: $H-color;
 }
 
+.logo {
+    width: 75px;
+}
+
 @media screen and (max-width: $breakpoint-xs) {
     .navbar-brand {
         display: none;
